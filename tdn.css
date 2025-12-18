@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./font/Poppins-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+button,
+a,
+input {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem;
+}
+
+.logo {
+    height: 5rem;
+    width: 12rem;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 45% 40% 15%;
+    align-items: center;
+}
+
+.nav-links {
+    margin-left: 3rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 0 1.3rem;
+    color: #1c19fa;
+}
+
+
+.nav-btn {
+    background-color: #1c19fa;
+    color: white;
+    border: none;
+    height: 3.3rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+
+.hero-sec {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    justify-self: center;
+}
+
+.hero-sec-btn {
+    background-color: #1c19fa;
+    color: white;
+    border: none;
+    height: 3.3rem;
+    width: 15rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.main {
+    font-size: 4.5rem;
+    margin-bottom: 0;
+}
+
+.sub-main {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.sub-main-text {
+    font-size: 1.3rem;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .hero-img{
+        display: none;
+    }
+    .nav-link{
+        display: none;
+    }
+    body{
+        text-align: center;
+        padding: 0.8rem;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 45%;
+    }
+    .nav-btn{
+        width: 9rem;
+        height: 2.7rem;
+        border-radius: 10px;
+        font-size: 0.8rem;
+    }
+}
